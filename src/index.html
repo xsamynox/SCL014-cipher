@@ -1,14 +1,111 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <header>
+      <img src="" alt="logo" />
+      <h1>Covert</h1>
+      <p><span id="user-name"></span></p>
+    </header>
+    ​
+    <!--Pantalla principal-->
+    <section>
+      <section>
+        <img src="" alt="logo" />
+        <h1>Covert</h1>
+      </section>
+      ​
+      <section>
+        <form action="">
+          <input
+            class=""
+            id="secret-name"
+            type="text"
+            placeholder="Nombre secreto"
+            value=""
+          />
+          <button class="" id="button-get-in" type="button" name="send">
+            Entrar
+          </button>
+        </form>
+      </section>
+    </section>
+    ​
+    <!--Pantalla Cipher-->
+    <section>
+      <!--Desplazamiento offset-->
+      <section>
+        <h2>Título</h2>
+        <form action="">
+          <label for="">
+            <input class="" id="offset4" type="number" name="cipher" value="" />
+            espacios <br />
+          </label>
+        </form>
+      </section>
+      <!--Ingresar mensaje-->
+      <section>
+        <!--Caja izquierda-->
+        <section>
+          <form action="">
+            <button class="" id="" type="button" name="simple-text">
+              Texto simple
+            </button>
+            <button class="" id="" type="button" name="cipher-text">
+              Texto codificado
+            </button>
+            <br />
+            <textarea
+              id="text"
+              name="text-here"
+              rows="10"
+              cols="60"
+              value=""
+              placeholder="Escribe algo..."
+            ></textarea>
+            <input
+              class=""
+              name="clear"
+              type="reset"
+              title="Borrar texto"
+              value="X"
+            />
+          </form>
+        </section>
+        <!--Caja derecha-->
+        <section>
+          <form action="">
+            <p>Texto codificado</p>
+            <textarea
+              id="text-area-right"
+              name="text-here"
+              value=""
+              rows="10"
+              cols="60"
+              disabled
+            ></textarea>
+          </form>
+          <form action="">
+            <p>Texto decodificado</p>
+            <textarea name="text-here" rows="10" cols="60" disabled></textarea>
+          </form>
+        </section>
+        <!--Boton traducir-->
+        <button class="" id="translate" type="button" name="translate">
+          Traducir
+        </button>
+      </section>
+    </section>
+    ​
+    <footer>
+      <p>
+        Todos tus mensajes serán información <strong>100% confidencial.</strong>
+      </p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
