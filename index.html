@@ -6,20 +6,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="not-visible" id="header">
       <img src="" alt="logo" />
       <h1>Covert</h1>
       <p><span id="user-name"></span></p>
     </header>
     ​
     <!--Pantalla principal-->
-    <section>
-      <section>
+    <section id="login">
         <img src="" alt="logo" />
         <h1>Covert</h1>
-      </section>
-      ​
-      <section>
         <form action="">
           <input
             class=""
@@ -32,17 +28,16 @@
             Entrar
           </button>
         </form>
-      </section>
     </section>
     ​
     <!--Pantalla Cipher-->
-    <section>
+    <main class="not-visible" id="screen-cipher">
       <!--Desplazamiento offset-->
       <section>
         <h2>Título</h2>
         <form action="">
           <label for="">
-            <input class="" id="offset4" type="number" name="cipher" value="" />
+            <input class="" id="offset" type="number" name="cipher" value="" />
             espacios <br />
           </label>
         </form>
@@ -52,15 +47,15 @@
         <!--Caja izquierda-->
         <section>
           <form action="">
-            <button class="" id="" type="button" name="simple-text">
+            <button class="" id="btn-simple-text" type="button" name="simple-text">
               Texto simple
             </button>
-            <button class="" id="" type="button" name="cipher-text">
+            <button class="" id="btn-cipher-text" type="button" name="cipher-text">
               Texto codificado
             </button>
             <br />
             <textarea
-              id="text"
+              id="string"
               name="text-here"
               rows="10"
               cols="60"
@@ -78,7 +73,7 @@
         </section>
         <!--Caja derecha-->
         <section>
-          <form action="">
+          <form action="" class="" id="encode">
             <p>Texto codificado</p>
             <textarea
               id="text-area-right"
@@ -89,17 +84,20 @@
               disabled
             ></textarea>
           </form>
-          <form action="">
+          <form action="" class="not-visible" id="decode">
             <p>Texto decodificado</p>
-            <textarea name="text-here" rows="10" cols="60" disabled></textarea>
-          </form>
+            <textarea name="text-here" rows="10" cols="60" id="text-area-right2" disabled></textarea>
+          </form> 
         </section>
         <!--Boton traducir-->
         <button class="" id="translate" type="button" name="translate">
           Traducir
         </button>
+        <button class="" id="translate2" type="button" name="translate">
+          Traducir2
+        </button>
       </section>
-    </section>
+    </main>
     ​
     <footer>
       <p>
