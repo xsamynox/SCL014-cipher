@@ -1,24 +1,35 @@
 const cipher = {
-  encode:(offset, string) =>{
+  encode: (offset, string) => {
     let showResult = '';
     string = string.toUpperCase();
-     for (let i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i++) {
       let caracterAscii = string.charCodeAt(i);
-        showResult += String.fromCharCode((caracterAscii - 65 + parseInt(offset)) % 26 + 65); 
-  }
-   return showResult;
+      if (caracterAscii >= 65 && caracterAscii <= 90) {
+        showResult += String.fromCharCode(
+          ((caracterAscii - 65 + parseInt(offset)) % 26) + 65
+        );
+      } else {
+        showResult += string[i];
+      }
+    }
+    return showResult;
   },
-  decode:(offset,string) => {
+  decode: (offset, string) => {
     let showResult = '';
     string = string.toUpperCase();
-     for (let i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i++) {
       let caracterAscii = string.charCodeAt(i);
-        showResult += String.fromCharCode((caracterAscii - 65 - parseInt(offset)) % 26 + 65); 
-  }
-  return showResult;
-   }
-  }
-
+      if (caracterAscii >= 65 && caracterAscii <= 90) {
+        showResult += String.fromCharCode(
+          ((caracterAscii - 65 - parseInt(offset)) % 26) + 65
+        );
+      } else {
+        showResult += string[i];
+      }
+    }
+    return showResult;
+  },
+};
 
 export default cipher;
 
