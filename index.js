@@ -6,14 +6,16 @@ console.log(cipher);
 document
   .getElementById('button-get-in')
   .addEventListener('click', showSecretName);
-//Mostrar nombre secreto
+
+//Mostrar Alias del usuario.
 function showSecretName() {
   let userName = document.getElementById('secret-name').value;
   document.getElementById('user-name').innerHTML = userName;
-  document.getElementById('login').classList.add('not-visible');
-  document.getElementById('screen-cipher').classList.remove('not-visible');
-  document.getElementById('header').classList.remove('not-visible');
-  document.getElementById('btn-simple-text').classList.add('not-visible');
+  document.getElementById('login').classList.add('not-visible'); //Oculta la pantalla de Login.
+  document.getElementById('screen-cipher').classList.remove('not-visible'); //Muestra pantalla Cipher.
+  document.getElementById('header').classList.remove('not-visible'); //Muestra el header.
+  document.getElementById('translate').classList.remove('not-visible'); //Mostrando el botón de Codificar.
+  document.getElementById('translate2').classList.add('not-visible'); //Ocultando el botón de Decifrar
 }
 
 //Mostrar pantallas resultados
@@ -25,8 +27,8 @@ document
 function showEncode() {
   document.getElementById('decode').classList.add('not-visible');
   document.getElementById('encode').classList.remove('not-visible');
-  document.getElementById('btn-cipher-text').classList.remove('not-visible');
-  document.getElementById('btn-simple-text').classList.add('not-visible');
+  document.getElementById('translate2').classList.add('not-visible');
+  document.getElementById('translate').classList.remove('not-visible');
 }
 
 //Al hacer click en el botón Translate se muestra el resultado de codificar, en la caja de la derecha.
@@ -47,8 +49,8 @@ document
 function showDecode() {
   document.getElementById('encode').classList.add('not-visible');
   document.getElementById('decode').classList.remove('not-visible');
-  document.getElementById('btn-cipher-text').classList.add('not-visible');
-  document.getElementById('btn-simple-text').classList.remove('not-visible');
+  document.getElementById('translate2').classList.remove('not-visible');
+  document.getElementById('translate').classList.add('not-visible');
 }
 
 //Al hacer click en el botón Translate se muestra el resultado de decodificar, en la caja de la derecha.
