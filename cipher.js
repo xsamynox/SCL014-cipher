@@ -19,13 +19,9 @@ const cipher = {
     string = string.toUpperCase();
     for (let i = 0; i < string.length; i++) {
       let caracterAscii = string.charCodeAt(i);
-      if (caracterAscii >= 65 && caracterAscii <= 90) {
-        showResult += String.fromCharCode(
-          ((caracterAscii - 65 - parseInt(offset)) % 26) + 65
-        );
-      } else {
-        showResult += string[i];
-      }
+      showResult += String.fromCharCode(
+        ((caracterAscii - 65 - parseInt(offset)) % 26) + 65
+      );
     }
     return showResult;
   },
