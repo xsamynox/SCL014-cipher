@@ -4,24 +4,41 @@
 }
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
+.container{
+  margin: 15px 60px;
+  display: block;
+}
+
 /* Header */
 header {
-  border-style: none none solid none;
-  border-color: #f1f1f1;
-  height: 60px;
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
-.logo-small {
-  width: 20%;
-  height: 2vh;
-  margin: 1% 1% 1% 1%;
+.blue2{
+  width: 220px;
+  height: 15px;
+  background-color: #003DA6;
+  float: left;
+  margin-left: 30px;
 }
+.red2{
+  width: 220px;
+  height:15px;
+  background-color: #EA0029;
+  float: right; 
+}
+.hr{
+  display: inline-block;
+  margin: 0px;
+}
+
 /* Titulos */
 h1 {
-  margin: 1%;
   text-align: center;
   color: grey;
-  font-size: 250%;
+  font-size: 25px;
+  font-weight: 600;
 }
 span {
   text-align: center;
@@ -29,16 +46,22 @@ span {
   font-size: 100%;
 }
 /* Login */
+.welcome {
+  font-size: 16px;
+  text-align: center;
+  color: #4F5B6A;
+  margin-top: 220px;
+}
 .login-left {
   margin: 0;
-  width: 50%;
+  width: 40%;
   height: 100vh;
   float: left;
   background-color: #204051;
 }
 .login-right {
   margin: 0;
-  width: 50%;
+  width: 60%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -47,40 +70,75 @@ span {
   background-color: #ffffff;
 }
 .logo {
-  height: 30%;
+  height: auto;
   width: 30%;
-  margin: 35% 36% 35% 36%;
 }
 .btn-get-in {
-  margin-top: 15px;
-  width: 30%;
-  height: 5%;
+  margin-top: 25px;
+  width: 20%;
+  height: 35px;
   border: 0;
   border-radius: 5px;
   background-color: #1b75bb;
   color: #ffffff;
   text-decoration: underline;
-  font-size: 110%;
+  font-size: 16px;
+}
+.btn-get-in:hover{
+  background-color: #ffffff;
+  border: 1px solid #1b75bb;
+  color: #1b75bb;
+  font-weight: 600;
 }
 #secret-name {
-  width: 50%;
-  height: 5%;
+  width: 40%;
+  height: 35px;
   border-radius: 5px;
-  background-color: #f1f1f1;
+  border: 1px  solid #bbbbbb;
+  font-size: 16px;
 }
+.message{
+  margin-top: 180px;
+  font-size: 16px;
+  color: #4F5B6A;
+  font-weight: 300;
+}
+.blue{
+  width: 220px;
+  height: 7px;
+  background-color: #003DA6;
+  float: left;
+}
+.red{
+  width: 220px;
+  height: 7px;
+  background-color: #EA0029;
+  float: right;
+}
+.hr{
+  display: inline-block;
+  margin: 0px;
+}
+
+
+/*Pantalla Principal*/
+
 /* instrucciones */
 .instruction {
-  margin-left: 5%;
-  color: grey;
-  font-size: 120%;
+  color: #4F5B6A;
+  font-size: 16px;
+  contain: content;
 }
 /* Desplazamiento */
 #offset {
-  width: 3%;
-  font-size: 120%;
+  font-size: 16px;
+  color: #4F5B6A;
 }
 input[type='number']::-webkit-inner-spin-button {
   opacity: 1;
+}
+p{
+  color: #4F5B6A;
 }
 /* Cajas textarea */
 .div {
