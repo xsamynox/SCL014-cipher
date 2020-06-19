@@ -7,98 +7,140 @@
   </head>
   <body>
     <header class="not-visible" id="header">
-      <img src="" alt="logo" />
-      <h1>Covert</h1>
-      <p><span id="user-name"></span></p>
+      <img class="logo-small" src="../Images/rayas-gob.png" alt="logo" />
     </header>
-    ​
+
     <!--Pantalla principal-->
     <section id="login">
-        <img src="" alt="logo" />
-        <h1>Covert</h1>
-        <form action="">
-          <input
-            class=""
-            id="secret-name"
-            type="text"
-            placeholder="Nombre secreto"
-            value=""
-          />
-          <button class="" id="button-get-in" type="button" name="send">
-            Entrar
-          </button>
-        </form>
+      <section class="login-left">
+        <img
+          class="logo"
+          src="../Images/logo-gob-chile.png"
+          alt="logo-gobierno-chile"
+        />
+      </section>
+      <section class="login-right">
+        <p>
+          El portal interno donde podrás cifrar y decifrar tus mensajes<br />de
+          manera rápida y secreta.
+        </p>
+        <input
+          class=""
+          id="secret-name"
+          type="text"
+          placeholder="Ingresa tu Alias"
+          value=""
+        />
+        <button class="btn-get-in" id="button-get-in" type="button" name="send">
+          Entrar
+        </button>
+      </section>
     </section>
-    ​
+
     <!--Pantalla Cipher-->
     <main class="not-visible" id="screen-cipher">
       <!--Desplazamiento offset-->
       <section>
-        <h2>Título</h2>
-        <form action="">
-          <label for="">
-            <input class="" id="offset" type="number" name="cipher" value="" />
-            espacios <br />
-          </label>
-        </form>
+        <h1>Hola <span id="user-name"></span></h1>
+        <p class="instruction">
+          1. Para comenzar seleccione la cantidad de desplazamiento que desea
+          aplicar a su mensaje. <br />
+          2. A continuación podrá escribir su mensaje a codificar en el recuadro
+          izquierdo, en caso que desee decodificar un mensaje debera seleccione
+          el botón "Texto codificado". <br />
+          3. Haga click en el botón "Codificar mensaje" o "Decodificar mensaje"
+          según lo requiera. <br />
+          4. El resultado de su mensaje se mostrara en el recuadro de la
+          derecha, donde podrá copiar el mensaje para ser enviado
+          posteriormente.
+        </p>
+        <p>Selecciona un desplazamiento.</p>
+        <input
+          id="offset"
+          type="number"
+          name="cipher"
+          value=""
+          min="1"
+          max="100"
+        />
       </section>
       <!--Ingresar mensaje-->
-      <section>
+      <section class="encode-decode">
         <!--Caja izquierda-->
         <section>
           <form action="">
-            <button class="" id="btn-simple-text" type="button" name="simple-text">
+            <button
+              class="btn"
+              id="btn-simple-text"
+              type="button"
+              name="simple-text"
+            >
               Texto simple
             </button>
-            <button class="" id="btn-cipher-text" type="button" name="cipher-text">
+            <button
+              class="btn"
+              id="btn-cipher-text"
+              type="button"
+              name="cipher-text"
+            >
               Texto codificado
             </button>
-            <br />
-            <textarea
-              id="string"
-              name="text-here"
-              rows="10"
-              cols="60"
-              value=""
-              placeholder="Escribe algo..."
-            ></textarea>
-            <input
-              class=""
-              name="clear"
-              type="reset"
-              title="Borrar texto"
-              value="X"
-            />
           </form>
+          <textarea
+            id="string"
+            name="text-here"
+            rows="20"
+            cols="80"
+            value=""
+            placeholder="Escribe tu mensaje..."
+          ></textarea>
         </section>
         <!--Caja derecha-->
         <section>
           <form action="" class="" id="encode">
-            <p>Texto codificado</p>
+            <p class="div">Mensaje codificado</p>
             <textarea
               id="text-area-right"
               name="text-here"
               value=""
-              rows="10"
-              cols="60"
+              rows="20"
+              cols="80"
               disabled
             ></textarea>
           </form>
           <form action="" class="not-visible" id="decode">
-            <p>Texto decodificado</p>
-            <textarea name="text-here" rows="10" cols="60" id="text-area-right2" disabled></textarea>
-          </form> 
+            <p class="div">Mensaje decodificado</p>
+            <textarea
+              name="text-here"
+              rows="20"
+              cols="80"
+              id="text-area-right2"
+              disabled
+            ></textarea>
+          </form>
         </section>
-        <!--Boton traducir-->
-        <button class="" id="translate" type="button" name="translate">
-          Traducir
+      </section>
+
+      <!--Boton traducir-->
+      <section>
+        <button
+          class="btn-translate not-visible"
+          id="translate"
+          type="button"
+          name="translate"
+        >
+          Codificar Mensaje
         </button>
-        <button class="" id="translate2" type="button" name="translate">
-          Traducir2
+        <button
+          class="btn-translate"
+          id="translate2"
+          type="button"
+          name="translate"
+        >
+          Decodificar Mensaje
         </button>
       </section>
     </main>
-    ​
     <footer>
       <p>
         Todos tus mensajes serán información <strong>100% confidencial.</strong>
