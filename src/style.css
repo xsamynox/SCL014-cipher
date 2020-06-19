@@ -1,12 +1,121 @@
-/* body{
-    display: block;
-    width: 100%;
+/* Mostrar y ocultar */
+.not-visible {
+  display: none;
 }
-#container {
-    margin: 0 auto;
-    position: relative;
-  } */
-
-  .not-visible{
-    display: none;
-  }
+body {
+  margin: 0;
+}
+/* Header */
+header {
+  border-style: none none solid none;
+  border-color: #f1f1f1;
+  height: 60px;
+}
+.logo-small {
+  width: 20%;
+  height: 2vh;
+  margin: 1% 1% 1% 1%;
+}
+/* Titulos */
+h1 {
+  margin: 1%;
+  text-align: center;
+  color: grey;
+  font-size: 250%;
+}
+span {
+  text-align: center;
+  color: grey;
+  font-size: 100%;
+}
+/* Login */
+.login-left {
+  margin: 0;
+  width: 50%;
+  height: 100vh;
+  float: left;
+  background-color: #204051;
+}
+.login-right {
+  margin: 0;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.logo {
+  height: 30%;
+  width: 30%;
+  margin: 35% 36% 35% 36%;
+}
+.btn-get-in {
+  margin-top: 15px;
+  width: 30%;
+  height: 5%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #1b75bb;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 110%;
+}
+#secret-name {
+  width: 50%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+/* instrucciones */
+.instruction {
+  margin-left: 5%;
+  color: grey;
+  font-size: 120%;
+}
+/* Desplazamiento */
+#offset {
+  width: 3%;
+  font-size: 120%;
+}
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}
+/* Cajas textarea */
+.div {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+}
+.encode-decode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Botones Cipher*/
+.btn {
+  width: 49.7%;
+  height: 50px;
+  border: 0;
+  background-color: #1b75bb;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 100%;
+}
+.btn-translate {
+  margin-top: 15px;
+  width: 15%;
+  height: 37px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #1b75bb;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 100%;
+}
+footer {
+  text-align: center;
+}
