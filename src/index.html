@@ -4,49 +4,51 @@
     <meta charset="utf-8" />
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="not-visible" id="header">
-      <img class="logo-small" src="../Images/rayas-gob.png" alt="logo" />
+      <section class="hr">
+        <hr class="blue2">
+        <hr class="red2">
+      </section>
     </header>
 
-    <!--Pantalla principal-->
-    <section id="login">
+    <!--Pantalla Bienvenida-->
+    <section id="login" class="">
       <section class="login-left">
         <img class="logo" src="../Images/logo-gob-chile.png" alt="logo-gobierno-chile">
       </section>
       <section class="login-right">
-        <p>El portal interno donde podrás cifrar y decifrar tus mensajes<br>de manera rápida y secreta.</p>
-        <input class="" id="secret-name" type="text" placeholder="Ingresa tu Alias" value="">
+        <p class="welcome">El portal interno donde podrás cifrar y descifrar tus mensajes<br>de manera rápida y secreta.</p>
+        <input id="secret-name" type="text" placeholder="    Ingresa tu Alias(*)" value="">
         <button class="btn-get-in" id="button-get-in" type="button" name="send"> Entrar </button>
+        <p class="message">Todos tus mensajes serán información <strong>100% confidencial.</strong></p>
+        <section class="hr">
+          <hr class="blue">
+          <hr class="red">
+        </section>
       </section>
     </section>
     <!--Pantalla Cipher-->
-    <main class="not-visible" id="screen-cipher">
+    <main class="not-visible container" id="screen-cipher">
       <!--Desplazamiento offset-->
       <section>
-        <h1>Hola <span id="user-name"></span></h1>
-        <p class="instruction">
-          1. Para comenzar seleccione la cantidad de desplazamiento que desea
-          aplicar a su mensaje. <br />
-          2. A continuación podrá escribir su mensaje a codificar en el recuadro
-          izquierdo, en caso que desee decodificar un mensaje debera seleccione
-          el botón "Texto codificado". <br />
-          3. Haga click en el botón "Codificar mensaje" o "Decodificar mensaje"
-          según lo requiera. <br />
-          4. El resultado de su mensaje se mostrara en el recuadro de la
-          derecha, donde podrá copiar el mensaje para ser enviado
-          posteriormente.
-        </p>
-        <p>Selecciona un desplazamiento.</p>
-        <input
-          id="offset"
-          type="number"
-          name="cipher"
-          value=""
-          min="1"
-          max="100"
-        />
+        <h1>Bienvenido/a <span id="user-name"></span></h1>
+        <ol class="instruction">
+          <li>Para comenzar seleccione la cantidad de desplazamiento que desea
+            aplicar a su mensaje.</li>
+          <li>A continuación podrá escribir su mensaje a codificar en el recuadro
+            izquierdo, en caso que desee decodificar un mensaje debera seleccione
+            el botón "Texto codificado".</li>
+          <li>Haga click en el botón "Codificar mensaje" o "Decodificar mensaje"
+            según lo requiera.</li>
+          <li>El resultado de su mensaje se mostrara en el recuadro de la
+            derecha, donde podrá copiar el mensaje para ser enviado
+            posteriormente.</li>
+        </ol>
+        <p>Para comenzar selecciona un desplazamiento</p>
+        <input id="offset" type="number" name="cipher" value="" min="1" max="100">
       </section>
       <!--Ingresar mensaje-->
       <section class="encode-decode">
@@ -125,7 +127,7 @@
         </button>
       </section>
     </main>
-    <footer>
+    <footer class="not-visible">
       <p>
         Todos tus mensajes serán información <strong>100% confidencial.</strong>
       </p>
