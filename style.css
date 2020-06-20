@@ -5,10 +5,11 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  height: auto;
 }
 .container{
-  margin: 15px 60px;
-  display: block;
+  margin: 15px 120px;
+  position: relative;
 }
 
 /* Header */
@@ -34,16 +35,12 @@ header {
 }
 
 /* Titulos */
-h1 {
+h2 {
   text-align: center;
-  color: grey;
+  color: rgb(109, 109, 109);
   font-size: 25px;
-  font-weight: 600;
-}
-span {
-  text-align: center;
-  color: grey;
-  font-size: 100%;
+  font-weight: 400;
+
 }
 /* Login */
 .welcome {
@@ -117,7 +114,6 @@ span {
 }
 .hr{
   display: inline-block;
-  margin: 0px;
 }
 
 
@@ -126,45 +122,87 @@ span {
 /* instrucciones */
 .instruction {
   color: #4F5B6A;
-  font-size: 16px;
+  font-size: 14px;
   contain: content;
 }
 /* Desplazamiento */
 #offset {
   font-size: 16px;
   color: #4F5B6A;
+  margin-top: 15px;
+  margin-left: 5px;
 }
 input[type='number']::-webkit-inner-spin-button {
   opacity: 1;
 }
 p{
   color: #4F5B6A;
+  float: left;
 }
 /* Cajas textarea */
-.div {
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  background-color: #f1f1f1;
+/*Caja Izquierda*/
+.box-left{
+  width: 49.5%;
+  float: left;
 }
-.encode-decode {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.text-area{
+  width: 98.9%;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-btn{
+  margin: 0px;
 }
 /* Botones Cipher*/
-.btn {
-  width: 49.7%;
-  height: 50px;
-  border: 0;
+.btn-cipher-text{
+  width: 50%;
+  float: left;
   background-color: #1b75bb;
   color: #ffffff;
   text-decoration: underline;
-  font-size: 100%;
+  font-size: 16px;
+  border: 0px;
+  height: 50px;
+}
+.btn-cipher-text:hover{
+  background-color: #ffffff;
+  color: #1b75bb;
+  border: 1px solid #1b75bb;
+}
+
+.btn-simple-text{ /* reciclar */
+  width: 50%;
+  float: right;
+  background-color: #1b75bb;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 16px;
+  border: 0px;
+  height: 50px;
+}
+.btn-simple-text:hover{
+  background-color: #ffffff;
+  color: #1b75bb;
+  border: 1px solid #1b75bb;
+}
+/*Caja Derecha*/
+.box-right{
+  width: 49.5%;
+  float: right;
+  margin: 0px;
+}
+.btn-right-decode{
+  width: 100%;
+  background-color: #dddddd;
+  font-size: 16px;
+  border: 0px;
+  height: 50px;
+  color: rgb(65, 65, 65);
 }
 .btn-translate {
   margin-top: 15px;
+  margin-right: 380px;
+  float: right;
   width: 15%;
   height: 37px;
   border: 0;
@@ -175,5 +213,8 @@ p{
   font-size: 100%;
 }
 footer {
-  text-align: center;
+  margin-top: 390px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(235, 235, 235);
 }
