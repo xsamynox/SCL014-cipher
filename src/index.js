@@ -16,6 +16,7 @@ function showSecretName() {
   document.getElementById('header').classList.remove('not-visible'); //Muestra el header.
   document.getElementById('translate').classList.remove('not-visible'); //Mostrando el botón de Codificar.
   document.getElementById('translate2').classList.add('not-visible'); //Ocultando el botón de Decifrar
+  document.getElementById('footer').classList.remove('not-visible');
 }
 
 //Mostrar pantallas resultados
