@@ -66,29 +66,26 @@
             </button>
           </form>
           <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba su mensaje..." ></textarea>
-          <input name="clear" type="reset" tittle="borrar texto" value="X">
+          <!-- <input name="clear" type="reset" tittle="borrar texto" value="X"> -->
       </section>
         <!--Caja derecha-->
       <section class="box-right">
           <form class="form-btn" id="encode">
             <button class="btn-right-decode" disabled>Mensaje codificado</button>
-            <textarea class="text-area" id="text-area-right" name="text-here" value="" rows="15" cols="80" disabled></textarea>
+            <textarea class="text-area" id="text-area-right" name="text-here" value="" rows="15" cols="80"></textarea>
           </form>
           <form class="not-visible form-btn" id="decode">
             <button class="btn-right-decode" disabled>Mensaje decodificado</button>
-            <textarea class="text-area" id="text-area-right2" name="text-here" value="" rows="15" cols="80" disabled></textarea>
+            <textarea class="text-area" id="text-area-right2" name="text-here" value="" rows="15" cols="80"></textarea>
           </form>
       </section>
       </section>
 
       <!--Boton traducir-->
     <section>
-        <button class="btn-translate not-visible" id="translate" type="button" name="translate">
-          Codificar Mensaje
-        </button>
-        <button class="btn-translate" id="translate2" type="button" name="translate">
-          Decodificar Mensaje
-        </button>
+        <button class="btn-translate not-visible" id="translate" type="button" name="translate">Codificar Mensaje</button>
+        <button class="btn-translate" id="translate2" type="button" name="translate">Decodificar Mensaje</button>  
+        <button class="btn-copy" id="copy" type="button" value="copy">Copy</button>
       </section>
     </main>
     <footer class="not-visible" id="footer">

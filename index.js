@@ -3,9 +3,7 @@ import cipher from './cipher.js';
 console.log(cipher);
 
 //Agregando un evento al botón entrar
-document
-  .getElementById('button-get-in')
-  .addEventListener('click', showSecretName);
+document.getElementById('button-get-in').addEventListener('click', showSecretName);
 
 //Mostrar Alias del usuario.
 function showSecretName() {
@@ -21,9 +19,7 @@ function showSecretName() {
 
 //Mostrar pantallas resultados
 //Botón texto simple
-document
-  .getElementById('btn-simple-text')
-  .addEventListener('click', showEncode);
+document.getElementById('btn-simple-text').addEventListener('click', showEncode);
 
 function showEncode() {
   document.getElementById('decode').classList.add('not-visible');
@@ -36,16 +32,23 @@ function showEncode() {
 document.getElementById('translate').addEventListener('click', () => {
   let offset = document.getElementById('offset').value;
   let string = document.getElementById('string').value;
-  document.getElementById('text-area-right').innerHTML = cipher.encode(
-    offset,
-    string
-  );
+  document.getElementById('text-area-right').innerHTML = cipher.encode(offset, string);
 });
 
+//Copiar valor de textarea.
+document.getElementById('copy').addEventListener('click', copy);
+
+function copy() {
+  let textarea = document.getElementById("text-area-right");
+  textarea.select();
+  document.execCommand("copy");
+  let textarea2 = document.getElementById("text-area-right2");
+  textarea2.select();
+  document.execCommand("copy");
+}
+
 //Botón texto codificado
-document
-  .getElementById('btn-cipher-text')
-  .addEventListener('click', showDecode);
+document.getElementById('btn-cipher-text').addEventListener('click', showDecode);
 
 function showDecode() {
   document.getElementById('encode').classList.add('not-visible');
@@ -58,8 +61,5 @@ function showDecode() {
 document.getElementById('translate2').addEventListener('click', () => {
   let offset = document.getElementById('offset').value;
   let string = document.getElementById('string').value;
-  document.getElementById('text-area-right2').innerHTML = cipher.decode(
-    offset,
-    string
-  );
+  document.getElementById('text-area-right2').innerHTML = cipher.decode(offset,string);
 });
