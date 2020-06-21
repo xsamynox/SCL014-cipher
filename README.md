@@ -12,6 +12,9 @@
   - [4. Decisiones de Diseño](#4-decisiones-de-diseño)
     - [4.1 Elementos visuales](#41-elementos-visuales)
     - [4.2 Colores](#42-colores)
+    - [4.3 Tipografía](#43-tipografía)
+  - [5. Prototipo](#5-prototipo)
+  - [6. Test de Usuario e iteración](#6-test-de-usuario-e-iteración)
   - [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
     - [Sotf Skills o Habilidades Blandas](#sotf-skills-o-habilidades-blandas)
   - [4. Consideraciones generales](#4-consideraciones-generales)
@@ -72,6 +75,46 @@ Se decidió utilizar para la interfaz 3 colores principales:
 * Azul: el cual representa seriedad, confianza, seguridad y transmite armonía, dándole al usuario una cercanía con el producto.
   
 * Blanco: finalmente se optó por complementarlo con el blanco para hacer la interfaz más balanceada y dar la sensación de limpieza y descanso visual. 
+
+### 4.3 Tipografía
+
+La tipografía utilizada para este proyecto es “Roboto” ya que el estilo de las letras es Sans-serif, facilitando la lectura y legibilidad a nuestross usuarios.
+La Familia tipográfica seleccionada es :Ligth 300, Regular 400 y Bold 700.
+
+## 5. Prototipo
+
+* Sketch (link)
+  
+* Prototipo baja fidelidad ([Invision](https://samanthamoreno609642.invisionapp.com/console/Prototype-Proyect-Cipher-ckb7z74h4149d01brqdswjncl/ckb86bui4013z01bjzd2ni07c/play))
+  
+* Prototipo alta fidelidad y hojas de estilos ([Figma] https://www.figma.com/proto/07wBlGJ4oZeFXFWsuAhkc9/Proyecto-cifrado-C%C3%A9sar?node-id=5%3A12&scaling=min-zoom)
+
+## 6. Test de Usuario e iteración
+
+Pruebas de posibles errores y obstáculos de la interfaz y propuestas de mejora.
+
+Para realizar los Test de usuario, le pedimos a 4 personas que navegaran dentro de nuestra interfaz, donde nos pudimos percatar que en la ejecución de ciertas tareas ellos tuvieron las mismas problemáticas para llevar a cabo los requerimientos del test, siendo estas:
+
+* Explicarle a los usuarios en qué consiste un desplazamiento u Offset.
+  
+* Hacer más amigable y entendible los títulos de los botones.
+  
+* Agregar elementos visuales como iconos, para complementar las acciones.
+  
+* Añadir un botón de copiar al resultado del mensaje, para mejorar la usabilidad.
+  
+* Que al ejecutar otra tarea se restablezca los valores de los textarea.
+  
+* Indicar que ciertos campos son requeridos para avanzar.
+
+* Unificar la forma de referirse al usuario en tercera persona.
+
+(Link google drive con videos).
+
+
+
+
+
 
 
 
