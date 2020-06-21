@@ -18,7 +18,7 @@
     <!--Pantalla Bienvenida-->
     <section id="login" class="">
       <section class="login-left">
-        <img class="logo" src="../Images/logo-gob-chile.png" alt="logo-gobierno-chile">
+        <img class="logo" src="../Imagenes/Logotipo_oficial_del_Gobierno_de_Chile (1).png" alt="logo-gobierno-chile">
       </section>
       <section class="login-right">
         <p class="welcome">El portal interno donde podrás cifrar y descifrar tus mensajes<br>de manera rápida y secreta.</p>
@@ -49,7 +49,7 @@
             posteriormente.</li>
         </ol>
         <form class="hr">
-          <p>Para comenzar selecciona un desplazamiento</p>
+          <p class="p-offset">Para comenzar selecciona un desplazamiento (*)</p>
           <input id="offset" type="number" name="cipher" value="" min="1" max="100">
         </form>
       </section>
@@ -61,11 +61,12 @@
             <button class="btn-cipher-text" id="btn-simple-text" type="button" name="simple-text">
               Texto simple
             </button>
-            <button class="btn-simple-text" id="btn-cipher-text" type="button" name="cipher-text">
+            <button class="btn-simple-text" id="btn-cipher-text" type="button" name="cipher-text">  
               Texto codificado
             </button>
           </form>
-          <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba el mensaje que desea codificar ..."></textarea>
+          <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba su mensaje..." ></textarea>
+          <input name="clear" type="reset" tittle="borrar texto" value="X">
       </section>
         <!--Caja derecha-->
       <section class="box-right">
@@ -75,7 +76,7 @@
           </form>
           <form class="not-visible form-btn" id="decode">
             <button class="btn-right-decode" disabled>Mensaje decodificado</button>
-            <textarea name="text-here" rows="15" cols="80" id="text-area-right2" disabled></textarea>
+            <textarea class="text-area" id="text-area-right2" name="text-here" value="" rows="15" cols="80" disabled></textarea>
           </form>
       </section>
       </section>
@@ -91,8 +92,7 @@
       </section>
     </main>
     <footer class="not-visible" id="footer">
-      <p>Todos tus mensajes serán información <strong>100% confidencial.</strong>
-      </p>
+      <p>Todos tus mensajes serán información <strong>100% confidencial.</strong></p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
