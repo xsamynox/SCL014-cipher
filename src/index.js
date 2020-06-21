@@ -39,12 +39,12 @@ document.getElementById('translate').addEventListener('click', () => {
 document.getElementById('copy').addEventListener('click', copy);
 
 function copy() {
-  let textarea = document.getElementById("text-area-right");
+  let textarea = document.getElementById('text-area-right');
   textarea.select();
-  document.execCommand("copy");
-  let textarea2 = document.getElementById("text-area-right2");
+  document.execCommand('copy');
+  let textarea2 = document.getElementById('text-area-right2');
   textarea2.select();
-  document.execCommand("copy");
+  document.execCommand('copy');
 }
 
 //Botón texto codificado
