@@ -87,7 +87,7 @@ La Familia tipográfica seleccionada es :Ligth 300, Regular 400 y Bold 700.
   
 * Prototipo baja fidelidad ([Invision](https://samanthamoreno609642.invisionapp.com/console/Prototype-Proyect-Cipher-ckb7z74h4149d01brqdswjncl/ckb86bui4013z01bjzd2ni07c/play))
   
-* Prototipo alta fidelidad y hojas de estilos ([Figma] (https://www.figma.com/proto/07wBlGJ4oZeFXFWsuAhkc9/Proyecto-cifrado-C%C3%A9sar?node-id=5%3A12&scaling=min-zoom))
+* Prototipo alta fidelidad y hojas de estilos ([Figma](https://www.figma.com/proto/07wBlGJ4oZeFXFWsuAhkc9/Proyecto-cifrado-C%C3%A9sar?node-id=5%3A12&scaling=min-zoom))
 
 ## 6. Test de Usuario e iteración
 
