@@ -159,17 +159,17 @@ input[type='number']::-webkit-inner-spin-button {
 .btn-cipher-text{
   width: 50%;
   float: left;
-  background-color: #1b75bb;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1b75bb;
   text-decoration: underline;
   font-size: 16px;
-  border: 0px;
+  border: 1px solid #1b75bb;
   height: 50px;
 }
 .btn-cipher-text:hover{
-  background-color: #ffffff;
-  color: #1b75bb;
-  border: 1px solid #1b75bb;
+  background-color: #1b75bb;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .btn-simple-text{ /* reciclar */
