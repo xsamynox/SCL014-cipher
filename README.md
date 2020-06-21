@@ -2,61 +2,79 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+- [Cifrado César](#cifrado-césar)
+  - [Índice](#índice)
+  - [1. Preámbulo](#1-preámbulo)
+  - [2. Definición del proyecto](#2-definición-del-proyecto)
+    - [2.1 Perfil de usuario](#21-perfil-de-usuario)
+    - [2.2 Objetivos del usuario con respecto a nuestro producto](#22-objetivos-del-usuario-con-respecto-a-nuestro-producto)
+  - [3. Resolución del problema](#3-resolución-del-problema)
+  - [4. Decisiones de Diseño](#4-decisiones-de-diseño)
+    - [4.1 Elementos visuales](#41-elementos-visuales)
+    - [4.2 Colores](#42-colores)
+  - [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+    - [Sotf Skills o Habilidades Blandas](#sotf-skills-o-habilidades-blandas)
+  - [4. Consideraciones generales](#4-consideraciones-generales)
+  - [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+    - [Definición del producto](#definición-del-producto)
+    - [Interfaz de usuario (UI)](#interfaz-de-usuario-ui)
+    - [Scripts / Archivos](#scripts--archivos)
+  - [6. Funcionalidad extra o “Hacker edition”](#6-funcionalidad-extra-o-hacker-edition)
+  - [7. Vamos a los detalles. Consideraciones Técnicas](#7-vamos-a-los-detalles-consideraciones-técnicas)
+  - [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+    - [Primeros pasos](#primeros-pasos)
+    - [Recursos y temas relacionados](#recursos-y-temas-relacionados)
+  - [9. Checklist](#9-checklist)
+    - [Funcionalidad extra o “Hacker edition”](#funcionalidad-extra-o-hacker-edition)
 
 ***
 
 ## 1. Preámbulo
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+Este proyecto está basado en el Cifrado César, el cual cumple el objetivo de Codificar o Decodificar un mensaje por medio de una sustitución de caracteres (Offset/Desplazamiento). Con el fin de devolver al usuario un mensaje cifrado.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+Leer más información acerca del [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+Para el desarrollo de esta aplicación, nos enfocamos en un tipo de usuario más específico, el cual fuera un trabajador del Gobierno de Chile. Nos dimos cuenta que en este ambiente existe una necesidad potente de comunicarse interna, secreta y rápidamente con otro trabajador.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+## 2. Definición del proyecto
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+### 2.1 Perfil de usuario
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+Los principales usuarios que interactúan con nuestra interfaz, son específicamente los trabajadores del Gobierno de Chile, tales como los ministerios.
+Por otro lado nuestros usuarios son personas que disponen de poco tiempo en sus actividades, que necesitan constantemente mantenerse comunicados, de una forma fácil, rápida, secreta y segura.
 
-## 2. Resumen del proyecto
+### 2.2 Objetivos del usuario con respecto a nuestro producto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+* El objetivo principal de nuestros usuarios es contar con un espacio personal y confidencial, en donde puedan ingresar cierto mensaje con la intención de transformarlo a un mensaje secreto o de revelarlo según la necesidad.
+  
+* Otro de los objetivos que nuestros usuarios esperan es poder contar con una interfaz accesible e intuitiva, con el fin de ahorrar tiempos y comunicarse de manera ágil.
+  
+* Por otro lado el usuario espera que se cumpla con el objetivo de ser un espacio discreto, seguro y confiable, al que sólo puedan acceder miembros del gobierno, previamente registrados, con el fin de que agentes externos no se enteren de lo comunicado.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+## 3. Resolución del problema
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+Viendo los requerimientos de nuestros usuarios, nos dimos cuenta que podíamos crear una plataforma que supliera estas necesidades, ofreciendo una interfaz simple, sencilla y fácil de usar.
+
+## 4. Decisiones de Diseño
+
+Principalmente se pensó en desarrollar una plataforma que no tuviese muchos elementos distractores, visualmente hablando, ya que esto podría confundir y retrasar las acciones de nuestros usuarios.
+Es por esto que la estructura de nuestra aplicación cuenta con solo dos pantallas, una de bienvenida, donde el usuario previamente logueado, ingresa con su alias y accede a la pantalla principal, la cual ofrece a primera vista un espacio donde nuestros usuarios puedan escribir o pegar un mensaje, ya sea para codificar o decodificar.
+
+### 4.1 Elementos visuales
+Se pensó que para la creación de esta interfaz fuese semejante al estilo ya establecido en los sitios del gobierno, con la intención de generar una unidad y aire visual que logre hacer que el usuario se sienta cómodo y se adapte fácilmente. 
+Nuestra plataforma cuenta no cuenta con distractores visuales y ofrece un ambiente formal digno de una organización gubernamental.
+
+### 4.2 Colores
+Se decidió utilizar para la interfaz 3 colores principales: 
+* Gris: el cual transmite la sensación de prestigio, otorgándole a los usuarios mayor confianza al utilizar la app.
+  
+* Azul: el cual representa seriedad, confianza, seguridad y transmite armonía, dándole al usuario una cercanía con el producto.
+  
+* Blanco: finalmente se optó por complementarlo con el blanco para hacer la interfaz más balanceada y dar la sensación de limpieza y descanso visual. 
+
+
+
 
 ## 3. Objetivos de aprendizaje
 

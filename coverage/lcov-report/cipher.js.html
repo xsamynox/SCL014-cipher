@@ -22,30 +22,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">4.76% </span>
+                <span class="strong">90.48% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/21</span>
+                <span class='fraction'>19/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">5.26% </span>
+                <span class="strong">89.47% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/19</span>
+                <span class='fraction'>17/19</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -94,32 +94,32 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -129,33 +129,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const cipher = {
-  encode: <span class="fstat-no" title="function not covered" >(o</span>ffset, string) =&gt; {
-    let showResult = <span class="cstat-no" title="statement not covered" >'';</span>
-<span class="cstat-no" title="statement not covered" >    string = string.toUpperCase();</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; string.length; i++) {</span>
-      let caracterAscii = <span class="cstat-no" title="statement not covered" >string.charCodeAt(i);</span>
-<span class="cstat-no" title="statement not covered" >      if (caracterAscii &gt;= 65 &amp;&amp; caracterAscii &lt;= 90) {</span>
-<span class="cstat-no" title="statement not covered" >        showResult += String.fromCharCode(((caracterAscii - 65 + parseInt(offset)) % 26) + 65);</span>
+  encode: (offset, string) =&gt; {
+    let showResult = '';
+    string = string.toUpperCase();
+    for (let i = 0; i &lt; string.length; i++) {
+      let caracterAscii = string.charCodeAt(i);
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (caracterAscii &gt;= 65 &amp;&amp; caracterAscii &lt;= 90) {
+        showResult += String.fromCharCode(((caracterAscii - 65 + parseInt(offset)) % 26) + 65);
       } else {
 <span class="cstat-no" title="statement not covered" >        showResult += string[i];</span>
       }
     }
-<span class="cstat-no" title="statement not covered" >    return showResult;</span>
+    return showResult;
   },
-  decode: <span class="fstat-no" title="function not covered" >(o</span>ffset, string) =&gt; {
-    let showResult = <span class="cstat-no" title="statement not covered" >'';</span>
-<span class="cstat-no" title="statement not covered" >    string = string.toUpperCase();</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; string.length; i++) {</span>
-      let caracterAscii = <span class="cstat-no" title="statement not covered" >string.charCodeAt(i);</span>
-<span class="cstat-no" title="statement not covered" >      if (caracterAscii &gt;= 65 &amp;&amp; caracterAscii &lt;= 83) {</span>
-<span class="cstat-no" title="statement not covered" >        showResult += String.fromCharCode(((caracterAscii - 65 - parseInt(offset) + 26) % 26) + 65);</span>
-      } else <span class="cstat-no" title="statement not covered" >if (caracterAscii &gt;= 84 &amp;&amp; caracterAscii &lt;= 90) {</span>
-<span class="cstat-no" title="statement not covered" >        showResult += String.fromCharCode(((caracterAscii - 65 - parseInt(offset) + 26) % 26) + 65);</span>
+  decode: (offset, string) =&gt; {
+    let showResult = '';
+    string = string.toUpperCase();
+    for (let i = 0; i &lt; string.length; i++) {
+      let caracterAscii = string.charCodeAt(i);
+      if (caracterAscii &gt;= 65 &amp;&amp; caracterAscii &lt;= 83) {
+        showResult += String.fromCharCode(((caracterAscii - 65 - parseInt(offset) + 26) % 26) + 65);
+      } else <span class="missing-if-branch" title="else path not taken" >E</span>if (caracterAscii &gt;= 84 &amp;&amp; caracterAscii &lt;= 90) {
+        showResult += String.fromCharCode(((caracterAscii - 65 - parseInt(offset) + 26) % 26) + 65);
       } else {
 <span class="cstat-no" title="statement not covered" >        showResult += string[i];</span>
       } 
     }
-<span class="cstat-no" title="statement not covered" >    return showResult;</span>
+    return showResult;
   },
 };
 &nbsp;
@@ -171,7 +171,7 @@ A B C D E F G H I J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z*/
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Jun 20 2020 13:25:57 GMT-0400 (Chile Standard Time)
+                at Sat Jun 20 2020 17:11:05 GMT-0400 (Chile Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>

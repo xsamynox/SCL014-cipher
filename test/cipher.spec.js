@@ -1,7 +1,7 @@
 // Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
 import cipher from '../src/cipher';
 
-describe('cipher', () => {
+    describe('cipher', () => {
 
   test('should be an object', () => {
     expect(typeof cipher).toBe('object');
@@ -14,6 +14,7 @@ describe('cipher', () => {
     });
     test('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
       //completa este test!
+      expect(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("HIJKLMNOPQRSTUVWXYZABCDEFG")
     });
 
     
@@ -27,6 +28,7 @@ describe('cipher', () => {
 
     test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
       //completa este test!
+      expect(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     });
 
   });
