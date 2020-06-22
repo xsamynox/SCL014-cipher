@@ -62,7 +62,7 @@ h2 {
   background-color: #204051;
 }
 .login-right {
-  margin: 0 0 0 550px;
+  margin: 0;
   width: 60%;
   height: 100vh;
   display: flex;
@@ -211,13 +211,20 @@ input[type='number']::-webkit-inner-spin-button {
   margin-top: 15px;  
   margin-left: 50.5%;     
   border: 0;
-  background-color: #08385c;
+  background-color: #17629c;
   color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
   padding: 10px;
   text-align: center;
 }
+.btn-translate:hover {
+  background-color: #ffffff;
+  border: 1px solid #17629c;
+  color: #17629c;
+}
+
+
 .btn-secundary {     
   border: 0;
   background-color: #ffffff;
@@ -228,6 +235,7 @@ input[type='number']::-webkit-inner-spin-button {
   padding: 10px;
   text-align: center;
 }
+
 footer {
   text-align: center;
   width: 100%;
