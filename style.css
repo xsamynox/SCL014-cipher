@@ -5,8 +5,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  height: auto;
-  position: absolute;
+  height: auto; 
 }
 .container{
   margin: 15px 120px;
@@ -75,7 +74,7 @@ h2 {
   height: auto;
   width: 30%;
   display:block;
-  margin: 200px 0px 0px 170px;
+  margin: 40% 30% 50% 30%;
 }
 .btn-get-in {
   margin-top: 25px;
@@ -221,7 +220,7 @@ input[type='number']::-webkit-inner-spin-button {
   margin-top: 15px;  
   margin-left: 50.5%;     
   border: 0;
-  background-color: #17629c;
+  background-color: #1b75bb;
   color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
@@ -229,21 +228,28 @@ input[type='number']::-webkit-inner-spin-button {
   text-align: center;
 }
 .btn-translate:hover {
-  background-color: #ffffff;
-  border: 1px solid #17629c;
-  color: #17629c;
+  background-color: #17629c;
+  color: #ffffff;
 }
-
-
 .btn-secundary {     
   border: 0;
   background-color: #ffffff;
-  color: #08385c;
-  border: 1px solid #08385c;
+  color: #1b75bb;
+  border: 1px solid #1b75bb;
   text-decoration: underline;
   font-size: 16px;
   padding: 10px;
   text-align: center;
+}
+.btn-secundary:hover{
+  background-color: #1b75bb;
+  color: #ffffff;
+}
+.btn-secundary a{
+  color: #17629c;
+}
+.btn-secundary a:hover{
+  color: #ffffff;
 }
 
 footer {
