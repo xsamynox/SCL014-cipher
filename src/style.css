@@ -220,9 +220,9 @@ input[type='number']::-webkit-inner-spin-button {
 }
 .btn-secundary {     
   border: 0;
-  background-color: #08385c;
-  color: #ffffff;
-  border: 0px solid #08385c;
+  background-color: #ffffff;
+  color: #08385c;
+  border: 1px solid #08385c;
   text-decoration: underline;
   font-size: 16px;
   padding: 10px;
