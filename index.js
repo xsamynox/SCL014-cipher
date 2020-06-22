@@ -32,12 +32,22 @@ function showEncode() {
 document.getElementById('translate').addEventListener('click', () => {
   let offset = document.getElementById('offset').value;
   let string = document.getElementById('string').value;
-  document.getElementById('text-area-right').innerHTML = cipher.encode(offset, string);
+  document.getElementById('text-area-right').value = cipher.encode(offset, string);
 });
+
+//Borrar valores del textarea y cambiarlo por una cadena vacia.
+document.getElementById('clear').addEventListener('click', clear);
+
+function clear() {
+  document.getElementById('string').value="";
+  document.getElementById('text-area-right').value="";
+  document.getElementById('text-area-right2').value="";
+}
 
 //Copiar valor de textarea.
 document.getElementById('copy').addEventListener('click', copy);
 
+//Permite copiar el valor de cada textarea.
 function copy() {
   let textarea = document.getElementById('text-area-right');
   textarea.select();
@@ -61,5 +71,5 @@ function showDecode() {
 document.getElementById('translate2').addEventListener('click', () => {
   let offset = document.getElementById('offset').value;
   let string = document.getElementById('string').value;
-  document.getElementById('text-area-right2').innerHTML = cipher.decode(offset,string);
+  document.getElementById('text-area-right2').value = cipher.decode(offset,string);
 });
