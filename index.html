@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/23807e29d5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -21,10 +22,10 @@
         <img class="logo" src="../Imagenes/Logotipo_oficial_del_Gobierno_de_Chile (1).png" alt="logo-gobierno-chile">
       </section>
       <section class="login-right">
-        <p class="welcome">El portal interno donde podrás cifrar y descifrar tus mensajes<br>de manera rápida y secreta.</p>
-        <input id="secret-name" type="text" placeholder="    Ingresa tu Alias(*)" value="">
-        <button class="btn-get-in" id="button-get-in" type="button" name="send"> Entrar </button>
-        <p class="message">Todos tus mensajes serán información <strong>100% confidencial.</strong></p>
+        <p class="welcome">El portal interno donde podrá cifrar y descifrar mensajes,<br>de una manera rápida, sencilla y segura.</p>
+        <input id="secret-name" type="text" placeholder="    Ingrese su Alias(*)" value="">
+        <button class="btn-get-in" id="button-get-in" type="button" name="send"><i class="fas fa-arrow-right icon"></i> Entrar </button>
+        <p class="message">Todos los mensajes incluídos dentro,<br><strong></strong> será información 100% confidencial y a la que solo usted podrá acceder.</strong></p>
         <section class="hr">
           <hr class="blue">
           <hr class="red">
@@ -35,21 +36,15 @@
     <main class="not-visible container" id="screen-cipher">
       <!--Pasos de uso y desplazamiento -->
       <section>
-        <h2>Bienvenido/a <span id="user-name"></span></h2>
+        <h2>BIENVENIDO/A <span id="user-name"></span></h2>
         <ol class="instruction">
-          <li>Para comenzar seleccione la cantidad de desplazamiento que desea
-            aplicar a su mensaje.</li>
-          <li>A continuación podrá escribir su mensaje a codificar en el recuadro
-            izquierdo, en caso que desee decodificar un mensaje debera seleccione
-            el botón "Texto codificado".</li>
-          <li>Haga click en el botón "Codificar mensaje" o "Decodificar mensaje"
-            según lo requiera.</li>
-          <li>El resultado de su mensaje se mostrara en el recuadro de la
-            derecha, donde podrá copiar el mensaje para ser enviado
-            posteriormente.</li>
+          <li>Para comenzar seleccione la cantidad de <a href="">desplazamiento</a> que desea aplicar a su mensaje.</li>
+          <li>A continuación, podrá escribir su mensaje a codificar en el recuadro izquierdo, en caso que desee decodificar un mensaje deberá seleccionar el botón "Texto codificado".</li>
+          <li>Haga clic en el botón "Codificar mensaje" o "Decodificar mensaje" según lo requiera.</li>
+          <li>4.	El resultado de su mensaje aparecerá en el recuadro de la derecha, donde podrá copiar el mensaje si lo desea, para ser enviado posteriormente.</li>
         </ol>
         <form class="hr">
-          <p class="p-offset">Para comenzar selecciona un desplazamiento (*)</p>
+          <p class="p-offset">Para comenzar seleccione un número de desplazamiento  (*)</p>
           <input id="offset" type="number" name="cipher" value="" min="1" max="100">
         </form>
       </section>
@@ -58,8 +53,9 @@
         <!--Caja izquierda-->
       <section class="box-left">
           <form class="form-btn">
-            <button class="btn-cipher-text" id="btn-simple-text" type="button" name="simple-text">Texto simple</button>   
-            <button class="btn-simple-text" id="btn-cipher-text" type="button" name="cipher-text">Texto codificado</button>
+            <button class="btn-cipher-text" id="btn-simple-text" type="button" name="simple-text"><i class="fas fa-spell-check icon"></i> Texto simple</button>   
+            <i class="fas fa-exchange-alt arrows"></i>
+            <button class="btn-simple-text" id="btn-cipher-text" type="button" name="cipher-text"><i class="fas fa-lock icon"></i> Texto codificado</button>
           </form>
           <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba su mensaje..." ></textarea>
           <!-- <input name="clear" type="reset" tittle="borrar texto" value="X"> -->
@@ -79,13 +75,14 @@
 
       <!--Boton traducir-->
     <section>
-        <button class="btn-translate not-visible" id="translate" type="button" name="translate">Codificar Mensaje</button>
-        <button class="btn-translate" id="translate2" type="button" name="translate">Decodificar Mensaje</button>  
-        <button class="btn-copy" id="copy" type="button" value="copy">Copiar</button>
+        <button class="btn-translate not-visible" id="translate" type="button" name="translate"><i class="fas fa-lock icon"></i>Codificar Mensaje</button>
+        <button class="btn-translate" id="translate2" type="button" name="translate"><i class="fas fa-lock-open icon"></i>Decodificar Mensaje</button>  
+        <button class="btn-secundary" id="copy" type="button" value="copy"><i class="far fa-clone icon"></i>Copiar</button>
+        <button class="btn-secundary" id="copy" type="button" value=""><i class="far fa-envelope icon"></i>Redactar Correo</button>
       </section>
     </main>
     <footer class="not-visible" id="footer">
-      <p>Todos tus mensajes serán información <strong>100% confidencial.</strong></p>
+      <p class="">Todos los mensajes incluídos dentro,<strong></strong> será información 100% confidencial y a la que solo usted podrá acceder.</strong></p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

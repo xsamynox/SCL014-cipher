@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   height: auto;
+  position: absolute;
 }
 .container{
   margin: 15px 120px;
@@ -22,12 +23,16 @@ header {
   background-color: #003DA6;
   float: left;
   margin-left: 30px;
+  margin-top: -2px;
+  border: 0px;
 }
 .red2{
-  width: 220px;
+  width: 260px;
   height:15px;
   background-color: #EA0029;
   float: right; 
+  margin-top: -2px;
+  border: 0px;
 }
 .hr{
   display: inline-block;
@@ -37,9 +42,9 @@ header {
 /* Titulos */
 h2 {
   text-align: center;
-  color: rgb(109, 109, 109);
-  font-size: 25px;
-  font-weight: 400;
+  color: rgb(99, 99, 99);
+  font-size: 20px;
+  font-weight: 600;
 
 }
 /* Login */
@@ -57,7 +62,7 @@ h2 {
   background-color: #204051;
 }
 .login-right {
-  margin: 0;
+  margin: 0 0 0 550px;
   width: 60%;
   height: 100vh;
   display: flex;
@@ -70,49 +75,51 @@ h2 {
   height: auto;
   width: 30%;
   display:block;
-  margin: 35%;
+  margin: 200px 0px 0px 170px;
 }
 .btn-get-in {
   margin-top: 25px;
   width: 20%;
   height: 35px;
   border: 0;
-  border-radius: 5px;
   background-color: #1b75bb;
   color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
 }
 .btn-get-in:hover{
-  background-color: #ffffff;
-  border: 1px solid #1b75bb;
-  color: #1b75bb;
-  font-weight: 600;
+  background-color: #17629c;
+  color: #ffffff;
 }
 #secret-name {
   width: 40%;
   height: 35px;
   border-radius: 5px;
-  border: 1px  solid #bbbbbb;
+  border: 1px  solid #c2c2c2;
   font-size: 16px;
 }
 .message{
   margin-top: 180px;
-  font-size: 16px;
-  color: #4F5B6A;
+  font-size: 14px;
+  color: #647080;
   font-weight: 300;
+  text-align: center;
 }
 .blue{
-  width: 220px;
+  width: 200px;
   height: 7px;
   background-color: #003DA6;
   float: left;
+  margin-right: 0px;
+  border: 0px;
 }
 .red{
-  width: 220px;
+  width: 230px;
   height: 7px;
   background-color: #EA0029;
   float: right;
+  margin-left: 0px;
+  border: 0px;
 }
 .hr{
   display: inline-block;
@@ -129,7 +136,7 @@ h2 {
 }
 /* Desplazamiento */
 #offset {
-  font-size: 16px;
+  font-size: 14px;
   color: #4F5B6A;
   margin-top: 15px;
   margin-left: 5px;
@@ -140,6 +147,7 @@ input[type='number']::-webkit-inner-spin-button {
 .p-offset{
   color: #4F5B6A;
   float: left;
+  font-size: 14px;
 }
 /* Cajas textarea */
 /*Caja Izquierda*/
@@ -157,23 +165,22 @@ input[type='number']::-webkit-inner-spin-button {
 }
 /* Botones Cipher*/
 .btn-cipher-text{
-  width: 50%;
+  width: 47%;
   float: left;
-  background-color: #ffffff;
-  color: #1b75bb;
+  background-color: #1b75bb;
+  color: #ffffff;
   text-decoration: underline;
   font-size: 16px;
   border: 1px solid #1b75bb;
   height: 50px;
 }
 .btn-cipher-text:hover{
-  background-color: #1b75bb;
+  background-color: #17629c;
   color: #ffffff;
-  border: 1px solid #ffffff;
 }
 
 .btn-simple-text{ /* reciclar */
-  width: 50%;
+  width: 47%;
   float: right;
   background-color: #1b75bb;
   color: #ffffff;
@@ -183,9 +190,8 @@ input[type='number']::-webkit-inner-spin-button {
   height: 50px;
 }
 .btn-simple-text:hover{
-  background-color: #ffffff;
-  color: #1b75bb;
-  border: 1px solid #1b75bb;
+  background-color: #17629c;
+  color: #ffffff;
 }
 /*Caja Derecha*/
 .box-right{
@@ -204,30 +210,44 @@ input[type='number']::-webkit-inner-spin-button {
 .btn-translate {
   margin-top: 15px;  
   margin-left: 50.5%;     
-  width: 15%;
-  height: 37px;
   border: 0;
-  border-radius: 5px;
-  background-color: #1b75bb;
+  background-color: #08385c;
   color: #ffffff;
   text-decoration: underline;
-  font-size: 100%;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
 }
-.btn-copy {
-  margin-top: 15px;      
-  width: 6%;
-  height: 37px;
+.btn-secundary {     
   border: 0;
-  border-radius: 5px;
-  background-color: #1b75bb;
+  background-color: #08385c;
   color: #ffffff;
+  border: 0px solid #08385c;
   text-decoration: underline;
-  font-size: 100%;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
 }
 footer {
   text-align: center;
-  margin-top: 7.5%;
   width: 100%;
-  height: 100px;
-  background-color: rgb(235, 235, 235);
+  height: 80px;
+  background-color: #cecece;
+  margin-top: 30px;
+}
+footer p{
+  padding-top: 25px;
+  color: #535353;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*Iconos*/
+.icon{
+  margin: 0px 20px 0px 0px;
+}
+.arrows{
+  color: #1b75bb;
+  margin-top: 20px;
+  margin-left: 10px;
 }
