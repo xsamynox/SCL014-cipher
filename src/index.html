@@ -45,6 +45,7 @@
         </ol>
         <form class="hr">
           <p class="p-offset">Para comenzar seleccione un número de desplazamiento  (*)</p>
+          <p class="p-offset">Para comenzar selecciona un  <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar#/media/Archivo:Caesar3.svg">desplazamiento</a>. (*)</p>
           <input id="offset" type="number" name="cipher" value="" min="1" max="100">
         </form>
       </section>
@@ -56,9 +57,9 @@
             <button class="btn-cipher-text" id="btn-simple-text" type="button" name="simple-text"><i class="fas fa-spell-check icon"></i> Texto simple</button>   
             <i class="fas fa-exchange-alt arrows"></i>
             <button class="btn-simple-text" id="btn-cipher-text" type="button" name="cipher-text"><i class="fas fa-lock icon"></i> Texto codificado</button>
-          </form>
-          <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba su mensaje..." ></textarea>
-          <!-- <input name="clear" type="reset" tittle="borrar texto" value="X"> -->
+            <textarea  class="text-area" id="string" name="text-here" rows="15" cols="80" value="" placeholder="  Escriba su mensaje..." ></textarea>
+            <input id="clear" type="button" tittle="borrar texto" value="X">
+        </form>        
       </section>
         <!--Caja derecha-->
       <section class="box-right">
