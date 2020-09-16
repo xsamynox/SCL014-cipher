@@ -274,7 +274,7 @@ footer p{
   margin-left: 10px;
 }
 
-/* Smartphone */
+/* Responsive smartphone */
 @media screen and (max-width: 736px) and (min-width: 320px) {
 .login-left {
   width: 100%;
